@@ -1,0 +1,16 @@
+<div class="container">
+<form [formGroup]="forme" (ngSubmit)="sub()" novalidate>
+    <div class="form-group">
+    <label>Name</label>
+    <input type="text"class="form-control" formControlName="name" required ><br>
+     
+      </div>
+    <label>Number</label>
+    <input type="text"  class="form-control" formControlName="number" required  ><br>
+    <label>Address</label>
+    <textarea name="address" class="form-control" formControlName="address" rows="4" cols="50" required>
+  </textarea><br>
+  <input type="submit" class="btn btn-danger" >
+</form>
+</div>
+<router-outlet></router-outlet>
